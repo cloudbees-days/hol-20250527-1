@@ -26,7 +26,7 @@ jobs:
       - name: Launchable verify
         run: launchable verify
       - name: Launchable record build
-        run: launchable --dry-run --log-level audit record build --name ${{ github.run_id }}
+        run: launchable record build --name ${{ github.run_id }}
       - name: Compile
         run: mvn compile
       - name: Test
